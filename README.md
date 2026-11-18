@@ -3,9 +3,9 @@
 A Streamlit application with:
 
 1. A **pre-trained lifestyle SVM** that takes the six inputs used by the linked SleepSense app—gender, age, BMI category, sleep duration, resting heart rate, and daily steps—plus its three optional symptom prompts.
-2. A separate EEG input and feature viewer for CSV samples or a configurable FPGA serial stream.
+2. One screening interface for optional EEG, ECG, and SpO₂ CSV/FPGA inputs, demo data, a show/hide performance-metrics button, and session-only screening history.
 
-The lifestyle result is based on lifestyle data only. EEG features are not included in its score, and there is no trained EEG apnea classifier in this release. The two outputs must not be interpreted as a combined or EEG-based prediction.
+The lifestyle result is based on lifestyle data only. EEG, ECG, and SpO₂ are recorded and summarized for context but are not included in its score; there is no trained multimodal apnea classifier in this release. Demo biosignals are synthetic and are not apnea-labeled. Neither signal data nor demo waveforms affect the SVM prediction.
 
 ## Run
 
@@ -36,7 +36,9 @@ The CSV is not bundled separately. The rebuild command writes a portable JSON ar
 
 ## EEG / FPGA input
 
-The EEG viewer accepts one numeric channel as a CSV column or captures from a serial port with one ASCII decimal sample per newline. It also includes a deterministic synthetic signal option for a one-time software demo; this is not real EEG and is not apnea-labeled. Port, baud rate, channel label, sample rate, and analysis-window duration are configurable. The FPGA protocol was not provided; binary frames, checksums, and multiplexed channels need a matching parser in `fpga_serial.py`.
+The unified form accepts one numeric CSV channel for EEG, ECG, or SpO₂. EEG can also be captured from an FPGA serial port that sends one ASCII decimal sample per newline. The Add example data and Random valid values buttons populate lifestyle fields from the actual model support bounds and select deterministic synthetic previews for EEG, ECG, and SpO₂. Synthetic previews are for testing the UI only; they are not real recordings or apnea labels. Serial port, baud rate, and EEG sample rate are configurable. The FPGA protocol was not provided; binary frames, checksums, and multiplexed channels need a matching parser in `fpga_serial.py`.
+
+The Model and performance tab explains the SVM and dataset and has a Show performance metrics button. The History tab keeps up to 100 screening entries in the current Streamlit session and offers CSV export. It does not store raw signal samples or persist data to disk. See [PERFORMANCE_REPORT.md](PERFORMANCE_REPORT.md) for the full metrics and limitations.
 
 The viewer computes windowed band-pass/DWT features (five EEG bands and six statistics per band) for inspection or export. It does not classify apnea. For that, a separately trained EEG model and appropriate EEG recordings with time-aligned respiratory-event labels are required. The [SHHS polysomnography database](https://physionet.org/content/shhpsgdb/1.0.0/) includes EEG and respiratory-event annotations; access to the larger cohort is through [NSRR](https://sleepdata.org/datasets/shhs) subject to approval and data-use terms. The Kaggle lifestyle labels cannot substitute for EEG event labels.
 
