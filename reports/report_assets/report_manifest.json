@@ -1,0 +1,150 @@
+{
+  "front_pages": 10,
+  "body_pages": 26,
+  "expected_total_pages": 36,
+  "members": [
+    [
+      "Satyam Mondal",
+      "23UEC034"
+    ],
+    [
+      "Sarbojit Rana",
+      "23UEC038"
+    ],
+    [
+      "Suraj Verma",
+      "23UEC046"
+    ],
+    [
+      "Ramavath Rajesh",
+      "23UEC103"
+    ]
+  ],
+  "body_page_headings": {
+    "1": "1 INTRODUCTION",
+    "2": "1.3 Problem statement and objectives",
+    "3": "1.4 Scope and interpretation",
+    "4": "2 LITERATURE REVIEW",
+    "5": "2.3 EEG classification and the SVM choice",
+    "6": "2.4 Deployment and evaluation lessons",
+    "7": "3 DATASET AND METHODOLOGY",
+    "8": "3.2 Window alignment and ground truth",
+    "9": "3.3 The 15-feature interface",
+    "10": "3.4 Offline reference preprocessing",
+    "11": "3.5 Learning and inference",
+    "12": "4 SOFTWARE IMPLEMENTATION",
+    "13": "4.2 Validation and portable inference",
+    "14": "4.3 Input modes and serial framing",
+    "15": "4.4 Predictions and demonstration data",
+    "16": "4.5 History, performance evidence and tests",
+    "17": "5 RESULTS AND DISCUSSION",
+    "18": "5.2 Held-out classification performance",
+    "19": "5.3 Error analysis and metric definitions",
+    "20": "5.4 Variation between test subjects",
+    "21": "5.5 Score behaviour and computation time",
+    "22": "5.6 Further experiments, integration and conclusion",
+    "23": "REFERENCES",
+    "24": "REFERENCES (continued)",
+    "25": "APPENDIX A: INPUT AND FEATURE CONTRACT",
+    "26": "APPENDIX B: REPRODUCIBILITY"
+  },
+  "figures": [
+    [
+      "Figure 1.1 Overall processing chain and Group 2 scope.",
+      1
+    ],
+    [
+      "Figure 3.1 Included normal and apnea windows by subject.",
+      7
+    ],
+    [
+      "Figure 3.2 Separation of offline fitting and runtime prediction.",
+      11
+    ],
+    [
+      "Figure 4.1 Software modules and the saved model artifact.",
+      12
+    ],
+    [
+      "Figure 4.2 Biosignal input controls with synthetic EEG feature preview.",
+      14
+    ],
+    [
+      "Figure 4.3 EEG window labels displayed for six synthetic demonstration inputs.",
+      15
+    ],
+    [
+      "Figure 4.4 Application performance table for the evaluated EEG model.",
+      16
+    ],
+    [
+      "Figure 5.1 Fixed-holdout classification metrics.",
+      18
+    ],
+    [
+      "Figure 5.2 Confusion matrix for 732 held-out windows.",
+      19
+    ],
+    [
+      "Figure 5.3 Accuracy, sensitivity and specificity for each test subject.",
+      20
+    ],
+    [
+      "Figure 5.4 ROC and precision\u2013recall curves for the recorded holdout scores.",
+      21
+    ]
+  ],
+  "tables": [
+    [
+      "Table 1.1 Workstream responsibilities.",
+      2
+    ],
+    [
+      "Table 2.1 Literature reviewed and relevance to this project.",
+      4
+    ],
+    [
+      "Table 3.1 Label mapping and exclusion rules.",
+      8
+    ],
+    [
+      "Table 3.2 Ordered FPGA feature-vector layout.",
+      9
+    ],
+    [
+      "Table 3.3 Reference feature-generation convention.",
+      10
+    ],
+    [
+      "Table 4.1 Implemented software components.",
+      12
+    ],
+    [
+      "Table 4.2 Important fields in the saved EEG artifact.",
+      13
+    ],
+    [
+      "Table 4.3 Software verification performed.",
+      16
+    ],
+    [
+      "Table 5.1 Selected model and evaluation configuration.",
+      17
+    ],
+    [
+      "Table 5.2 Measured EEG scores on the fixed holdout.",
+      18
+    ],
+    [
+      "Table 5.3 Subject-level fixed-holdout results.",
+      20
+    ],
+    [
+      "Table 5.4 Recorded software computation measurements.",
+      21
+    ]
+  ],
+  "model_source": "https://physionet.org/content/slpdb/1.0.0/",
+  "model_created_at": "2026-11-18T09:06:37.354707+00:00",
+  "report_generated_at": "2026-11-19T04:57:24.877163+00:00"
+}

@@ -1,8 +1,10 @@
 # Lifestyle SVM Performance Report
 
+This report describes the retained lifestyle model only. The application now also has a separate 15-feature EEG SVM; see [EEG_PERFORMANCE_REPORT.md](EEG_PERFORMANCE_REPORT.md) for its measured results and hardware compatibility limits. References below to the "current model" mean the lifestyle model, not the EEG classifier.
+
 ## Summary
 
-The current application is **not demonstrated to be better than the prior IoT/lifestyle model**. It uses the same six lifestyle inputs and the linked SleepSense dataset. EEG is not part of this SVM and does not change its result.
+The retained lifestyle model is **not demonstrated to be better than the prior IoT/lifestyle model**. It uses the same six lifestyle inputs and the linked SleepSense dataset. EEG is not part of this SVM and does not change its result.
 
 The numbers below are a reproducible grouped evaluation of the six-input SVM procedure on the linked 374-row dataset. They assess agreement with that dataset's `Sleep Apnea` label, not clinical diagnosis. These metrics do not establish that adding EEG improves performance.
 
@@ -41,7 +43,7 @@ In this holdout, all 15 apnea-labeled rows were flagged, while seven other-label
 
 ## Comparison with the previous application
 
-**No measured performance improvement is established.** This app reuses the same six-input task and source dataset; the EEG feature viewer is separate and contributes no signal to the classifier. There is no paired test on a new, independent cohort comparing the previous model to the current app. The results should therefore be read as a benchmark of the lifestyle model, not as evidence of improvement from EEG.
+**No measured improvement of the lifestyle score is established.** This model reuses the same six-input task and source dataset; the separate EEG classifier contributes no signal to its prediction. There is no paired test on a new, independent cohort comparing the previous lifestyle model to a combined classifier. The results below are a lifestyle benchmark and do not establish improvement from EEG.
 
 The linked repository also now documents a separate overnight SpO₂ model evaluated on a different dataset and task. Those SpO₂ results are not directly comparable to this lifestyle model.
 
@@ -49,7 +51,7 @@ The linked repository also now documents a separate overnight SpO₂ model evalu
 
 - This is a screening pattern prediction for labels in a small lifestyle dataset, not a medical diagnosis or an apnea-event detector.
 - It cannot calculate AHI, identify individual apnea events, estimate clinical severity, or rule out apnea.
-- The source data has no EEG, airflow, SpO₂, or event timestamps. The current model cannot make an EEG-based prediction.
+- The lifestyle source data has no EEG, airflow, SpO₂, or event timestamps. This lifestyle model cannot make an EEG-based prediction; the separate EEG classifier uses a different dataset.
 - The bundled artifact was refit on all 374 rows after grouped cross-validation tuning. The fixed-holdout metrics above come from a separate fixed split using the same procedure; they are not a claim that the artifact was evaluated on unseen clinical data.
 - The model abstains when a numeric input is outside the training support. Its training support includes ages 27–59, sleep duration 5.8–8.5 hours, heart rate 65–86 bpm, and steps 3,000–10,000/day.
 

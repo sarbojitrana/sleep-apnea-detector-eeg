@@ -1,0 +1,143 @@
+{
+  "source": "https://physionet.org/content/slpdb/1.0.0/",
+  "records": [
+    {
+      "record": "slp03",
+      "counts": {
+        "excluded_annotation": 333,
+        "normal": 343,
+        "apnea": 44
+      },
+      "files": {
+        "hea": "9e396d763cf3fd2412f5bcbc234f6b18957df65c4a7734e8c7a587ef97a2ab24",
+        "st": "1914ba40c87bb3030f22a95eec2017140033cb1889cd585ee4f814285ab04a6d",
+        "dat": "f6af00371d59af7c9ea2d48eb3ad75f71269b6c10caaa20daecbd75c7fb05d4d"
+      }
+    },
+    {
+      "record": "slp04",
+      "counts": {
+        "excluded_annotation": 163,
+        "apnea": 305,
+        "normal": 252
+      },
+      "files": {
+        "hea": "c0edf88c7e979b60d6dd802c16ce3e12fef2c00bc4baded3de73c0b721bac249",
+        "st": "43a842ea1adb80e26034eb358ef1880fe875d06efd456e8451122f749eee9ae7",
+        "dat": "c3c5676ccae1703699cf978135977ced9c35f33ce7d52c186f4baa24a68ed399"
+      }
+    },
+    {
+      "record": "slp14",
+      "counts": {
+        "excluded_annotation": 400,
+        "normal": 224,
+        "apnea": 90
+      },
+      "files": {
+        "hea": "6d556668874f3c1c677c20c7ec4102c1ff5b1576f7ec2f27af71473de8a4d2cf",
+        "st": "fe89b55094dceb6c2e11eb0923616ab21520cec2663230e877524c50030f2dcf",
+        "dat": "ce243a0a79100032145a441d9594bae4643c5507fce8ef58ab486e6aec4e88c5"
+      }
+    },
+    {
+      "record": "slp16",
+      "counts": {
+        "excluded_annotation": 349,
+        "normal": 142,
+        "apnea": 203
+      },
+      "files": {
+        "hea": "d7679aa5d017a2bdea0804e6ea7406664acba04571c9dcfe1cd3242347167a1a",
+        "st": "d7078ba59535907cf9380cd35630d8d9c0418f0f165822a256901bfb9bb7f28a",
+        "dat": "bc163ab73498b65d242217c69563d8ed687449dcbe227e916023658c728f3c5b"
+      }
+    },
+    {
+      "record": "slp48",
+      "counts": {
+        "excluded_annotation": 345,
+        "normal": 273,
+        "apnea": 142
+      },
+      "files": {
+        "hea": "e567bd19920024cc94bd61ed8b93814712d4746163f5351b2ac102cd910eb8f1",
+        "st": "3a175193794016b0435d750512452a1ab445d8f55de3551a1e6c839cc82a07c8",
+        "dat": "7d41a9459b88348d2ca4921b044aa1fb58bc3ad58afccac175bb55efb58b5fb4"
+      }
+    },
+    {
+      "record": "slp59",
+      "counts": {
+        "excluded_annotation": 196,
+        "apnea": 119,
+        "normal": 143
+      },
+      "files": {
+        "hea": "151ec0998358d3541e2840f90388f5cbf65d3d9038d8bb00adeb8a3a1ff3127c",
+        "st": "15f113de15a3e13985781a866bda932c6749544e0d6115f866a3a0031d21e261",
+        "dat": "18c6a76d53a92eaf3067ebe13342cb0360ba030d230668d58fd020aca7255c4f"
+      }
+    },
+    {
+      "record": "slp60",
+      "counts": {
+        "excluded_annotation": 321,
+        "apnea": 251,
+        "normal": 138
+      },
+      "files": {
+        "hea": "d1f8b22a3c6a075737ce25c9ca97fbbe0f781dcd142d0e9a91b0afb6639051c2",
+        "st": "59c37231a31dc420e768e3cb801e14e6da6fcdda3e4c5aa148a893e037db95e8",
+        "dat": "9607df91403715f64d2cf09749e2944b0dc1860b43a37b0d3b8ef48a2a69830b"
+      }
+    },
+    {
+      "record": "slp61",
+      "counts": {
+        "excluded_annotation": 158,
+        "normal": 352,
+        "apnea": 210
+      },
+      "files": {
+        "hea": "7f06b762a77168d101ebfbf62a779a4b578c7d5e85bb232e6fd6ebe772609ddf",
+        "st": "cdea9299104e405e00c05f10f63b105307aa630b5e8faf85372df5ef8b69c376",
+        "dat": "030949c4049bbb7762fb2b8e8d618a897eafe1b6b54ae6eebc971de35320c792"
+      }
+    },
+    {
+      "record": "slp66",
+      "counts": {
+        "excluded_annotation": 371,
+        "normal": 56,
+        "apnea": 12
+      },
+      "files": {
+        "hea": "f2d35951d2d1d92cec6f01b888733040b42841ce22fb30a15b3709c24043c412",
+        "st": "0244627fc7748a4f9bc62f7684e520ce602f1bb378ca3d15b25d3b92f0909669",
+        "dat": "b0db8330b5af467aa96f7fba3a4f67e5e66d25f7d062c78611a228257a4c0e63"
+      }
+    },
+    {
+      "record": "slp67x",
+      "counts": {
+        "excluded_boundary": 1,
+        "normal": 29,
+        "excluded_annotation": 76,
+        "apnea": 48
+      },
+      "files": {
+        "hea": "7ccf5cdf2f0d0a9d762e73077bdb43010356b0e1ce707526a721f59f7f20da49",
+        "st": "954210aeabd664d9bb70640a240be46f10c69784e7cf7fdf06ac444aa07405d8",
+        "dat": "bb8e542197753866c51eb1a2f7a3d84e3cc18136a612120d68297565ae1a7938"
+      }
+    }
+  ],
+  "selection": "All C3-O1 records with apnea annotations; montage and annotation availability decided before model evaluation.",
+  "excluded_records": {
+    "slp45": "Apnea annotations unavailable",
+    "slp41": "Apnea annotations unavailable and different montage",
+    "slp01a/slp01b/slp02a/slp02b/slp32/slp37": "Different EEG montage"
+  },
+  "attribution": "Moody G. MIT-BIH Polysomnographic Database v1.0.0. PhysioNet (1999). doi:10.13026/C23K5S. Ichimaru Y, Moody GB. Psychiatry Clin Neurosci 53:175-177 (1999)."
+}

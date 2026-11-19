@@ -1,0 +1,59 @@
+{
+  "sampling_rate_hz": 250.0,
+  "window_seconds": 30.0,
+  "channel": "EEG (C3-O1)",
+  "amplitude_unit": "uV",
+  "filter": "Butterworth prototype order 4 (bandpass order 8), 0.5-45 Hz, causal SOS, continuous per recording, zero initial state",
+  "filter_sos": [
+    [
+      0.03218427395599059,
+      0.06436854791198118,
+      0.03218427395599059,
+      1.0,
+      -0.481231682622041,
+      0.094533933393809
+    ],
+    [
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      -0.6389214218509089,
+      0.4925357086704227
+    ],
+    [
+      1.0,
+      -2.0,
+      1.0,
+      1.0,
+      -1.9765653376424923,
+      0.9767268380747811
+    ],
+    [
+      1.0,
+      -2.0,
+      1.0,
+      1.0,
+      -1.9904050038312977,
+      0.9905630563187575
+    ]
+  ],
+  "wavelet": "haar",
+  "level": 5,
+  "boundary": "symmetric",
+  "coefficient_counts": {
+    "A5": 235,
+    "D5": 235,
+    "D4": 469,
+    "D3": 938,
+    "D2": 1875
+  },
+  "energy": "sum of squared coefficients (uV^2)",
+  "mobility": "sqrt(population_variance(diff(coefficients)) / population_variance(coefficients)); no sample-rate multiplier",
+  "kurtosis": "Pearson population kurtosis (Gaussian=3), no excess or bias correction",
+  "degenerate_band": "mobility=0 and kurtosis=0 when variance is zero",
+  "transport": "decoded floating-point physical features, no prior normalization; unrounded",
+  "fpga_numerical_parity": "Not yet validated against RTL / fixed-point output",
+  "label_rule": "Sleep epochs only. OA/X/CA/CAA=1; sleep without respiratory codes=0. Hypopnea-only, wake/movement/unknown and startup epochs excluded.",
+  "source_annotation_alignment": "Each .st annotation applies to the following 30 seconds; use its exact sample index."
+}
